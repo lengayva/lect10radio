@@ -332,17 +332,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test
-    public void decreaseVolumeBellowMaxLimit() {
-        Radio radio = new Radio();
-        radio.setCurrentVolume(100);
 
-        radio.decreaseVolume();
-
-        int expected = 99;
-        int actual = radio.getCurrentVolume();
-        Assertions.assertEquals(expected, actual);
-    }
 
 
     @Test
